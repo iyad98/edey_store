@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350.509" height="252.515" viewBox="0 0 350.509 252.515">
+  <g id="bag" transform="translate(-661.11 -573.5)">
+    <rect id="bg-line" width="269" height="46" rx="19" transform="translate(678.619 664.015)" fill="rgba(97,97,97,0.08)"/>
+    <rect id="bg-line-2" data-name="bg-line" width="251" height="35" rx="14.5" transform="translate(721.619 715.015)" fill="rgba(97,97,97,0.08)"/>
+    <rect id="bg-line-3" data-name="bg-line" width="253" height="40" rx="16.5" transform="translate(703.619 754.015)" fill="rgba(97,97,97,0.08)"/>
+    <g id="shopping-bag" transform="translate(746.222 652.136)">
+      <path id="Fill-10" d="M4,40.463H165.853V0H4Z" transform="translate(1.581)" fill="#e81f34" fill-rule="evenodd"/>
+      <path id="Fill-14" d="M126.72,40.463V0h-5.93L103,17.341l17.79,23.122Z" transform="translate(40.714)" fill="#ffb8bf" fill-rule="evenodd"/>
+      <path id="Fill-15" d="M4,40.463V0H9.93L27.72,17.341,9.93,40.463Z" transform="translate(1.581)" fill="#ffb8bf" fill-rule="evenodd"/>
+      <path id="Fill-33" d="M110,144.808l16.149-4.1L126.743,29H110Z" transform="translate(43.481 11.463)" fill="#ffb8bf" fill-rule="evenodd"/>
+      <path id="Fill-35" d="M2,138.222l11.162,5.8V31H2Z" transform="translate(0.791 12.254)" fill="rgba(255,255,255,0.5)" fill-rule="evenodd"/>
+      <path id="Fill-36" d="M147.124,144.808H18.169A10.214,10.214,0,0,1,8,134.55V29H157.3V134.55a10.214,10.214,0,0,1-10.172,10.258" transform="translate(3.162 11.463)" fill="#ffdee1" fill-rule="evenodd"/>
+      <path id="Stroke-4916" d="M169.434,113.06V122.5a10.822,10.822,0,0,1-10.8,10.841H12.8A10.821,10.821,0,0,1,2,122.5V58" transform="translate(0.791 22.926)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Stroke-4917" d="M2,46.441V29H169.434V98.764" transform="translate(0.791 11.463)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Fill-4918" d="M5.581,50.791A2.791,2.791,0,1,1,2.791,48a2.792,2.792,0,0,1,2.791,2.791" transform="translate(0 18.974)" fill-rule="evenodd"/>
+      <path id="Stroke-4919" d="M122,87v2.791" transform="translate(48.224 34.389)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4922" d="M4,40.463H165.853V0H4Z" transform="translate(1.581)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Stroke-4923" d="M106.764,46V63.208c0,18.929-15.7,34.417-34.882,34.417h0C52.7,97.625,37,82.138,37,63.208V46" transform="translate(14.625 18.183)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Stroke-4924" d="M31,47.372a8.372,8.372,0,1,1,16.743,0" transform="translate(12.254 15.416)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Stroke-4925" d="M81,47.372a8.372,8.372,0,1,1,16.743,0" transform="translate(32.018 15.416)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4" fill-rule="evenodd"/>
+      <path id="Stroke-4928" d="M8,0,24.743,16.743" transform="translate(3.162)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4929" d="M24.743,12,8,35.72" transform="translate(3.162 4.743)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4930" d="M20,12V35.72" transform="translate(7.906 4.743)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4931" d="M119.743,0,103,16.743" transform="translate(40.714)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4932" d="M103,12l16.743,23.72" transform="translate(40.714 4.743)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+      <path id="Stroke-4933" d="M103,12V35.72" transform="translate(40.714 4.743)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+    </g>
+    <g id="glow" transform="translate(811.8 632.638)">
+      <rect id="Rectangle-2" width="3" height="10" rx="1" transform="translate(19.818 0.376)"/>
+      <rect id="Rectangle_5195" data-name="Rectangle 5195" width="2.791" height="8.372" rx="1" transform="matrix(0.978, -0.208, 0.208, 0.978, 8.372, 3.334)"/>
+      <rect id="Rectangle_5196" data-name="Rectangle 5196" width="2.791" height="4.186" rx="1" transform="translate(0 8.119) rotate(-25)"/>
+      <rect id="Rectangle_5197" data-name="Rectangle 5197" width="2.791" height="4.186" rx="1" transform="translate(41.597 11.913) rotate(-155)"/>
+      <rect id="Rectangle_5198" data-name="Rectangle 5198" width="2.791" height="8.372" rx="1" transform="translate(32.03 11.523) rotate(-168)"/>
+    </g>
+    <path id="plus" d="M690.346,598.253V596h1.522v2.253h2.283v1.5h-2.283v2.315h-1.522v-2.315H688v-1.5Z" transform="translate(12.178 8.696)" fill="#7dbfeb" fill-rule="evenodd"/>
+    <path id="plus-2" data-name="plus" d="M914.193,702.107V699h2.072v3.107h3.107v2.072h-3.107v3.193h-2.072v-3.193H911v-2.072Z" transform="translate(87.325 49.41)" fill="#eee332" fill-rule="evenodd"/>
+    <path id="plus-3" data-name="plus" d="M663.193,737.108V734h2.072v3.107h3.107v2.072h-3.107v3.192h-2.072v-3.192H660v-2.072Z" transform="translate(1.11 63.245)" fill="#e81f34" fill-rule="evenodd"/>
+    <ellipse id="oval" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(714.619 580.015)" fill="#a5d6d3"/>
+    <circle id="oval-2" data-name="oval" cx="1.5" cy="1.5" r="1.5" transform="translate(731.619 633.015)" fill="#cfc94e"/>
+    <circle id="oval-3" data-name="oval" cx="2" cy="2" r="2" transform="translate(704.619 802.015)" fill="#8cc8c8"/>
+    <ellipse id="oval-4" data-name="oval" cx="2" cy="1.5" rx="2" ry="1.5" transform="translate(972.619 688.015)" fill="#3ec08d"/>
+    <ellipse id="oval-5" data-name="oval" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(1005.619 722.015)" fill="#66739f"/>
+    <ellipse id="oval-6" data-name="oval" cx="3" cy="2" rx="3" ry="2" transform="translate(997.619 781.015)" fill="#c48c47"/>
+    <ellipse id="oval-7" data-name="oval" cx="2.5" cy="1.5" rx="2.5" ry="1.5" transform="translate(798.619 592.015)" fill="#a24c65"/>
+    <circle id="oval-8" data-name="oval" cx="4" cy="4" r="4" transform="translate(775.619 611.015)" fill="none" stroke="#66739f" stroke-width="2"/>
+    <ellipse id="oval-9" data-name="oval" cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(734.619 601.015)" fill="none" stroke="#efb549" stroke-width="2"/>
+    <ellipse id="oval-10" data-name="oval" cx="4.5" cy="3.5" rx="4.5" ry="3.5" transform="translate(685.619 818.015)" fill="none" stroke="#e81f34" stroke-width="2"/>
+    <ellipse id="oval-11" data-name="oval" cx="3.5" cy="5" rx="3.5" ry="5" transform="translate(986.619 717.015)" fill="none" stroke="#3cbc83" stroke-width="2"/>
+    <path id="diamond" d="M887.186,705l4.186,4.186-4.186,4.186L883,709.186Z" transform="translate(89.258 51.782)" fill="none" stroke="#c46f82" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="bubble-rounded" d="M736,578.186a4.184,4.184,0,0,1,4.186,4.186,4.184,4.184,0,0,1,4.186-4.186A4.184,4.184,0,0,1,740.186,574,4.184,4.184,0,0,1,736,578.186Z" transform="translate(31.151 0)" fill="none" stroke="#3cbc83" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

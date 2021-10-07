@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="Buq8Wzy2G7VsqLq37SrTyXfczbp6JgPzcqWcn1RC">
+    <title>
+         الشحن والتوصيل - إيدي ستور | Edey Store     </title>     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://167.99.143.115/website_v3/css/all.css" rel="stylesheet">
+    <link href="http://167.99.143.115/website_v3/css/fontawesome-all.css" rel="stylesheet">
+    <link href="http://167.99.143.115/website_v3/css/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="http://167.99.143.115/website_v3/css/owl.theme.default.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://167.99.143.115/website_v3/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="http://167.99.143.115/website_v3/plugins/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="http://167.99.143.115/website_v3/plugins/jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="http://167.99.143.115/website_v3/js/jquery.ui.slider-rtl.css">
+    <link href="http://167.99.143.115/website_v3/css/style.css" rel="stylesheet">
+
+
+    <link type="text/css" rel="stylesheet" href="http://167.99.143.115/website_v3/css/lightslider.css"/>
+    <link type="text/css" rel="stylesheet" href="http://167.99.143.115/website_v3/css/lightgallery.css"/>
+
+<!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://167.99.143.115/website_v3/css/responsive.css" rel="stylesheet">
+    <script src="http://167.99.143.115/website_v3/js/jquery-1.12.2.min.js"></script>
+
+
+
+    <meta property="al:ios:url" content="https://apps.apple.com/ae/app/infltr-infinite-filters/id935623257"/>
+    <meta property="al:ios:app_name" content="Example App"/>
+    <meta property="al:ios:app_store_id" content="935623257"/>
+    <meta property="al:android:package" content="com.example.client"/>
+    <meta property="al:android:app_name" content="Example App"/>
+    <meta property="al:android:url" content="example://test"/>
+    <style>
+        .slider img {
+            border-radius: 0px !important;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .alert {
+            text-align: right;
+        }
+
+        .loader-wrapper {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 99999;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .loader-wrapper .loader5 {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            margin-left: 10%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        .loader-wrapper .loader5 .dot {
+            width: 12px;
+            height: 12px;
+            background: #f06274;
+            border-radius: 100%;
+            display: inline-block;
+            animation: slide 1.2s infinite;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(1) {
+            animation-delay: 0.1s;
+            background: #f06274;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(2) {
+            animation-delay: 0.2s;
+            background: #f06274;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(3) {
+            animation-delay: 0.3s;
+            background: #f06274;
+        }
+
+        .overlay .btn {
+            width: 126px;
+            height: 46px;
+            background-color: #ffffff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+            border-radius: 0;
+        }
+
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+            border-width: 0.2em;
+            margin-bottom: 6px;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .custom-map-control-button {
+            width: 50px !important;
+            height: 40px !important;
+            left: 10px !important;
+            top: 10px !important;
+        }
+
+        .gm-style-iw-d div {
+            text-align: center;
+        }
+    </style>
+
+    
+    </head>
+<body>
+<input type="hidden" value="http://167.99.143.115/ar" id="get_url">
+<input type="hidden" value="http://167.99.143.115" id="get_source_url">
+<input type="hidden" value="ar" id="get_lang">
+<!-- preloader -->
+<div id="preloader">
+    <div id="spinner">
+        <div class="floating">
+            <img src="http://167.99.143.115/website_v3/img/logo.png" alt="إيدي ستور" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <header id="header">
+            <div class="msg_header" style="background-color:#50eaed;">
+                            <div class="msg_header">
+                    <div class="container">
+                        <p class="msg_top"
+                           style="color: #ffffff;">✌ مرحباً بك ... نتشرف بخدمتك و إستقبال طلباتك ✌</p>
+                    </div>
+                </div>
+                    </div>
+    
+    <div class="middle_header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo_site">
+                    <a href="http://167.99.143.115"><img src="http://167.99.143.115/website_v3/img/logo.png" alt="إيدي ستور"></a>
+                </div>
+                <div class="haeder_widget">
+                    <div class="search_head">
+                        <form class="form_search_head" action="#" id="form_search_category" method="get">
+                            <input type="hidden" name="_token" value="Buq8Wzy2G7VsqLq37SrTyXfczbp6JgPzcqWcn1RC">                            <input type="text" name="name" id="category_name" class="form-control"
+                                   placeholder="ابحث هنا عن المنتج أو التاجر">
+                            <span class="search_icon" id="kareem"><i class="far fa-search"></i></span>
+                            <div class="itm_us search_drop dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <span>التصنيف</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown_profile cat">
+                                                                            <li id="category_name" value="1"><a>أجهـــــزة كهـربــائيــــــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="11"><a>الـمــنــزل والــمــطـبــخ</a>
+                                        </li>
+                                                                            <li id="category_name" value="18"><a>الأثـــــاث الــــمـــنـــزلـــي</a>
+                                        </li>
+                                                                            <li id="category_name" value="21"><a>الأدوات الـريـاضــيــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="24"><a>الــعــنــايــة والــجـمـال</a>
+                                        </li>
+                                                                            <li id="category_name" value="29"><a>الإلكـتـــــــرونـيــــــــــــــــــات</a>
+                                        </li>
+                                                                            <li id="category_name" value="31"><a>الأطــفــال والألــعــاب</a>
+                                        </li>
+                                                                            <li id="category_name" value="32"><a>الأدوات الــــزراعــــيــــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="33"><a>الـحـيـوانـات الألـيـفــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="34"><a>صــــفــــقـــــة الـــــيـــــوم</a>
+                                        </li>
+                                                                            <li id="category_name" value="35"><a>الـتـسـلـيـم الـــفــوري</a>
+                                        </li>
+                                                                            <li id="category_name" value="36"><a>الــشــوي والــرحـــلات</a>
+                                        </li>
+                                                                            <li id="category_name" value="46"><a>الـــــــعـــــــدد والأدوات</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                        <div class="user_action_head clearfix">
+                            <div class="itm_us gru_search">
+                                <div class="header_search-button"></div>
+                            </div>
+                            <div class="itm_us fav dropdown notifications_list">
+                                <a href="#" class="btn_user_profile " data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="http://167.99.143.115/website_v3/img/noti_icon.svg" alt="notifications">
+                                    <span class="budge_cart">2</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown_profile">
+                                    <li>
+                                        <div class="single_noti">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="noti_icon">
+                                                        <img src="http://167.99.143.115/website_v3/img/noti.svg" alt="..">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="noti_content">
+                                                        <h5><span>طلب جديد ,</span> هناك حقيقة مثبتة منذ زمن طويل وهي أن
+                                                            المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                                                            الخارجي للنص</h5>
+                                                        <span><img src="http://167.99.143.115/website_v3/img/noti3.svg'" alt=""> 12/21/2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_noti">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="noti_icon">
+                                                        <img src="http://167.99.143.115/website_v3/img/noti2.svg" alt="..">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="noti_content">
+                                                        <h5><span>رسالة من الإدارة ,</span> هناك حقيقة مثبتة منذ زمن
+                                                            طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                            على الشكل الخارجي للنص</h5>
+                                                        <span><img src="http://167.99.143.115/website_v3/img/noti3.svg" alt=""> 12/21/2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <a href="notifications.html">شاهد كل الاشعارات</a>
+                                </ul>
+                            </div>
+                            <div class="itm_us gru_cart">
+                                <a href="http://167.99.143.115/ar/cart" class="btn_cart"
+                                   id="get-cart-simple-data">
+                                    <img src="http://167.99.143.115/website_v3/img/cart.svg" alt="السلة">
+                                    <span class="budge_cart" v-text="count_quantity">0</span>
+                                </a>
+                            </div>
+                            <div class="itm_us gru_cart" id="get-cart-data">
+                                <a href="http://167.99.143.115/ar/wishlist" class="btn_cart"
+                                   id="get-cart-simple-data">
+                                    <img src="http://167.99.143.115/website_v3/img/hearts.svg" alt="السلة">
+                                    
+                                    <h1> {{ count_favorites }}</h1>
+                                </a>
+                            </div>
+
+
+                            <div class="itm_us gru_profile_mobile dropdown">
+                                
+                                    <ul class="dropdown-menu dropdown_profile">
+                                        <li><a href="http://167.99.143.115/ar/sign-in"><i
+                                                    class="far fa-sign-in"></i>تسجيل دخول</a></li>
+                                        <li><a href="http://167.99.143.115/ar/sign-up"><i
+                                                    class="fas fa-user"></i>حساب جديد</a></li>
+                                                                            </ul>
+                                                            </div>
+                            <div class="itm_us gru_profile dropdown">
+                                <a href="#" class="btn_user_profile dropdown-toggle" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                                                            <div class="gru_profile_sec">
+                                            <h6>تسجيل الدخول </h6>
+                                        </div>
+                                                                    </a>
+                                <ul class="dropdown-menu dropdown_profile">
+
+
+                                                                            <li><a href="http://167.99.143.115/ar/sign-in"><i
+                                                    class="far fa-sign-in"></i>تسجيل دخول</a></li>
+                                        <li><a href="http://167.99.143.115/ar/sign-up"><i
+                                                    class="fas fa-user"></i>حساب جديد</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="msg_header2" style="background-color:#a347ff ; ">
+                            <div class="container">
+                    <a href="https://web.whatsapp.com/">
+                        <p class="msg_top"
+                           style="color: #ffffff;">✌ 11122111 ✌</p>
+                    </a>
+                </div>
+                    </div>
+
+    
+
+</header>
+
+<div class="block_search_mobile">
+    <div class="container">
+        <div class="search_head">
+            <form class="form_search_head" action="/shop/">
+                <input type="text" class="form-control" id="search_product_input" name="search"
+                       placeholder="ابحث عن منتج">
+                <span class="search_icon"><i class="far fa-search"></i></span>
+                <button type="submit" class="btn btn_search">بحث الآن</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+
+    <div class="block_breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+
+
+
+                <li class="breadcrumb-item"><a href="http://167.99.143.115">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">الشحن والتوصيل</li>
+            </ol>
+        </div>
+    </div>
+    <div class="content_innerPage">
+        <div class="container">
+            <div class="content_editor_page">
+                <h2 class="mb-4">الشحن والتوصيل</h2>
+
+                <p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">موقع الكويتية ستور الإلكتروني</span><span dir="LTR"></span><span dir="LTR"></span><span lang="AR-SA" dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>&nbsp;&nbsp;</span><span dir="LTR"><a href="http://www.q8store.co/"><span style="font-family: Arial, sans-serif; font-size: 10.5pt;">www.q8store.co</span></a></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;&nbsp;</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يمكن الوصول إليه عن طريق الإنترنت و/أو تطبيقات الهاتف المتحرك</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.&nbsp;<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يوفر لكم المحتويات والخدمات المتوفرة على الموقع حسب الأحكام والشروط التالية وسياسة الخصوصية لدينا وأحكام وشروط وسياسات أخرى قد تجدونها من خلال موقعنا بشأن وظائف محددة، مزايا أو عروض أو خدمة العملاء، التي تعتبر جميعها جزءا من أو متضمنة في هذه الأحكام والشروط (عامة، "الأحكام والشروط")</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">دخولكم إلى الموقع أو استخدامه هو بمثابة إقرار منكم بأنكم قد قرأتم هذه الأحكام والشروط وفهمتموها ووافقتم على الالتزام بها التزاما كاملا دون قيد أو شرط.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">الملكية الفكرية</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">نحن نمنحك صلاحية شخصية غير قابلة للتحويل أو التنازل وقابلة للإلغاء لاستخدام البرامج التي نوفرها لك كجزء من الموقع الإلكتروني، وذلك لغرض واحد يتمثل في تمكينك من استخدام خدماتنا والاستمتاع بمزاياها، وهذا على النحو المقرر من قبل الكويتية ستور ووفق الطريقة التي تسمح بها الشروط والأحكام</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ويحظر الاستخدام التجاري أو الاستخدام نيابةً عن الغير، ما لم نسمح بذلك صراحةً وخطيًا بصورة مسبقة. ويترتب على أي خرق لهذه الشروط والأحكام الإلغاء الفوري للرخصة الممنوحة بمقتضى هذه الفقرة دون سابق إنذار لك، ودون المساس بأي حقوق أخرى</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">جميع حقوق النشر والعلامات التجارية والأسماء التجارية والمظهر التجاري والتصميمات و"سمات" الموقع الإلكتروني وأي شكل من الأشكال الأخرى للملكية الفكرية والمواد والحقوق الأخرى المرتبطة بالموقع، بما في ذلك البرامج وكود إتش تي إم إل وغيره من الأكواد المستخدمة في الموقع الإلكتروني أو عناوين الصفحات أو الصور أو النصوص أو الرسوم التوضيحية أو التنسيقات أو الشعارات أو التصاميم أو الأيقونات أو الصور أو البرامج أو المقاطع الموسيقية أو التنزيلات أو مقاطع الفيديو (إجمالاً، "الملكية الفكرية")، هي — وتظل في جميع الأوقات— ملكية وحقًا أصيلاً للكويتية ستور و/ أو هي ملكية لصاحب كل منها، كما أنها محمية من قبل دول الخليج وقوانين العلامات التجارية وحقوق التأليف والنشر الدولية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ويجوز الوصول إلى الملكية الفكرية وجميع المواد الأخرى المعروضة على موقعنا الإلكتروني وعرضها وتنزيلها وطباعتها فقط للاستخدام الشخصي غير التجاري، وذلك حسبما تجيزه صراحةً الكويتية ستور و/ أو المرخَّص لهم كأطراف ثالثة من جانب الكويتية ستور.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ولكن (1) بشرط ألا تجري أي تعديل أو تغيير على الملكية الفكرية بأي شكل من الأشكال، و(2) أن لا تقدم أو تتيح الملكية الفكرية لأي طرف ثالث كنوع من التجارة. ولن تكتسب أي حق من حقوق التأليف والنشر أو العلامات التجارية أو غيرها من حقوق الملكية على الإطلاق فيما يتعلق بالملكية الفكرية. ولا يؤول لك أي ترخيص أو حق أو مصلحة في أي مواد أو برامج كأثر مترتب على استخدامك لهذا الموقع الإلكتروني أو على وصولك إلى الملكية الفكرية أو عرضها أو تنزيلها أو طباعتها</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ولا يجوز لك نسخ (باستثناء ما هو مبين أعلاه) أو نشر أو بث أو توزيع أو عرض أو تعديل أو إنشاء أعمال مشتقة من أي من مواد الملكية الفكرية أو من موقعنا الإلكتروني أو بيعها أو المشاركة في أي بيع أو استغلال لها بأي شكل من الأشكال، سواء كليًا أو جزئيًا. ولا يجوز استخدام الملكية الفكرية إلا باعتبارها مورد للتسوق. ويُمنَع منعًا باتًا أي استخدام آخر للملكية الفكرية، بما في ذلك نسخها أو تعديلها أو توزيعها أو بثها أو إعادة نشرها أو عرضها أو أدائها</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الكويتية ستور هي المالك الحصري أو المرخَّص لها للملكية الفكرية بشكل حصري (حسب مقتضى الحال)، وهي المرخَّص لها بشكل حصري لإسم النطاق</span><span dir="LTR"></span><span dir="LTR"></span><span lang="AR-SA" dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>&nbsp;</span><span dir="LTR"><a href="http://www.q8store.co/"><span style="font-family: Arial, sans-serif; font-size: 10.5pt;">www.q8store.co</span></a></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يجوز للكويتية ستور أن توفر محتوى مملوكًا لأطراف ثالثة ("محتوى أطراف ثالثة") أو روابط لمواقع إلكترونية لأطراف ثالثة ("مواقع أطراف ثالثة") كخدمة للمهتمين بهذه المعلومات. ولا تراقب الكويتية ستور أي محتوى لأطراف ثالثة أو مواقع أطراف ثالثة ولا تصدِّق على محتواها وليس لديها أي سيطرة عليها، ولا يعني إدراج روابط لمحتوى أطراف ثالثة أو لمواقع أطراف ثالثة وجود أي ارتباط أو علاقة بين الكويتية ستور والأطراف الثالثة ذات الصلة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ولا تضمن الكويتية ستور أو تقِّر بدقة أو كمال أي محتوى أطراف ثالثة أو أي مواقع أطراف ثالثة ولا تصادق على مدى دقتها أو كمالها. كما أن الكويتية ستور ليست مسؤولة عن تحديث أو مراجعة محتوى الأطراف الثالثة أو مواقع الأطراف الثالثة. ويكون استخدامك لمحتوى الأطراف الثالثة ومواقع الأطراف الثالثة على مسؤوليتك. ولا يعكس بالضرورة محتوى الأطراف الثالثة، بما في ذلك تعليقات مستخدمي محتوى الأطراف الثالثة التي ترد إلى الكويتية ستور، وجهات نظر الكويتية ستور الخاصة</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">في ضوء ما سبق، لن تتحمل الكويتية ستور المسؤولية لأي سبب كان على الإطلاق عن محتوى الأطراف الثالثة و/ أو مواقع الأطراف الثالثة، بما يشمل على سبيل المثال لا الحصر، توفير مصادر خارجية أو المحتوى أو الإعلانات التجارية أو المنتجات أو الخدمات أو أي معلومات أو بيانات أخرى متوفرة على الموقع الإلكتروني أو من مصادر خارجية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">&nbsp;</span></b><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">الخصوصية</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الرجاء مراجعة سياسة الخصوصية لدينا لمعرفة تفاصيل حول ممارساتنا بشأن المعلومات الشخصية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">شروط البيع</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">1</span><span dir="RTL"></span><span dir="RTL"></span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="RTL"></span><span dir="RTL"></span>. الأهلية</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">شراء المنتجات من خلال الموقع الإلكتروني مقصور حصرياً على الأطراف الذين يمكنهم قانوناً إبرام عقود على الإنترنت وفقاً لقوانين دولة الكويت</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">وحتى يمكنك إجراء عمليات الشراء على الموقع الإلكتروني، يجب عليك تقديم بياناتك الشخصية، بما في ذلك اسمك واسم عائلتك الحقيقيين ورقم هاتف جوال صحيح وعنوان بريد إلكتروني سليم وتفاصيل الدفع وعنوان صحيح لتحصيل الفواتير والمعلومات الأخرى المطلوبة وفق ما هو مقرر. كما أنك تقر وتضمن بأن تفاصيل الدفع التي تقدمها سارية وكاملة وصحيحة، وتؤكد على أنك الشخص المشار إليه في معلومات الفواتير المقدمة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الموقع الإلكتروني متوافر فقط للأشخاص الذين يستوفون شروط الكويتية ستور بشأن الأهلية والدفع الالكتروني، وهم أولئك الذين يحملون بطاقة ائتمان سارية المفعول صادرة من مصرف مقبول لدى الكويتية ستور، وأولئك الذين أذنوا لنا بإجراء خصم من بطاقات الائتمان الخاصة بهم لقيمة السعر الإجمالي للمنتجات التي يشترونها، بما يشمل أي ضرائب أو رسوم توصيل، إن وجدت. والمنتجات التي تُشترى تكون للاستخدام الشخصي أو لتقديمها كهدية فقط، ولا يجوز إعادة بيعها أو استخدامها لأغراض تجارية أو لتحقيق أية مكاسب تجارية أخرى. وتحتفظ الكويتية ستور بالحق في فرض قيود على الكميات المتعددة من قطعة بعينها، والتي تُشحن إلى عميل أو عنوان واحد بعينه</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">عندما تطلب شراء منتج (منتجات)، فإنك بذلك تأذن صراحةً لـ الكويتية ستور بالتحقق من بطاقة الائتمان وبنقل أو إرسال أو الحصول على معلومات بطاقة الائتمان الخاصة بك أو معلومات التقارير الائتمانية (بما يشمل أي معلومات محدَّثة) إلى أو من أطراف ثالثة للمصادقة على هويتك والتحقق من صحة بطاقتك الائتمانية وللحصول على التفويض الأولي باستخدام البطاقة و/أو إجازة عمليات الشراء الفردية، وذلك حسبما نراه ضرورياً. وتُعد موافقاً على أنه يجوز لنا استخدام المعلومات الشخصية التي تقدمها لغرض إجراء عمليات التحقق اللازمة لمكافحة الاحتيال والغش، وأنه يجوز الكشف عن هذه المعلومات الشخصية لمرجع ائتماني أو لوكالة معنية بمكافحة الاحتيال والغش، والتي قد تحتفظ بسجل لتلك المعلومات</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يُرجى الرجوع إلى سياسة الخصوصية الخاصة بنا للحصول على المعلومات المتعلقة بكيفية استخدامنا للبيانات الخاصة بك</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">2&nbsp;</span><span dir="RTL"></span><span dir="RTL"></span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="RTL"></span><span dir="RTL"></span>. طلب المنتجات<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يتم طلب المنتجات المعروضة المتوفرة على الموقع الإلكتروني وعلى حسابات الكويتية ستور بمواقع التواصل الاجتماعي عن طريق هذا الموقع وذلك حسب المواصفات والفيديوهات التي يتم عرضها.</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="LTR" style="margin-bottom: 0cm; text-align: justify; line-height: normal; direction: ltr; unicode-bidi: embed;"><span style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">المنتجات المتوفرة على الموقع الإلكتروني، بما في ذلك أي عينات أو هدايا مع عمليات الشراء قد تعرضها الكويتية ستور عليك، هي للاستخدام الشخصي أو للهدايا فقط. ولا يجوز لك بيع أو إعادة بيع أي منتجات تشتريها أو تحصل عليها بأي طريقة أخرى خلاف ذلك من الكويتية ستور</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">جميع المنتجات يتم طلبها بنظام (الحاوية</span><span dir="LTR"></span><span dir="LTR"></span><span lang="AR-SA" dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>&nbsp;</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">في البحر) من المصانع او الموردين من الصين وقد يستغرق تصنيعها وشحنها مدة من الزمن</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">اختيار ألوان المنتجات يتم حسب الألوان المتوفرة بالموقع وفي حالة توفر ألوان أخرى او عدم توفر الألوان التي قمتم بطلبها يتم التواصل معكم عن طريق بيانات التواصل المسجلة لدنيا لاختيار لون آخر</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">قد يكون هناك اختلاف بسيط في تصميم الشكل الخارجي "العبوة - الكرتون" للمنتج المُستلم من قبل العميل وصورة عرضه في موقع الكويتية ستور وذلك بسبب إصدار تصميم أحدث أو تغير للعبوة أو الكرتون الخارجي للمنتج من قبل الشركة المُصنعة،</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">لكن ذلك لا يعني اختلاف محتوى المنتج والكويتية ستور يضمن لكم ذلك، ويسعى دائماً لتحديث وتجديد صور عرض المنتجات بشكل دوري</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تخضع المنتجات المعروضة للبيع على الموقع الإلكتروني للقبول ومدى التوافر. وفي حال لم نتمكن، لأي سبب من الأسباب عقب وضع طلب لمنتج (منتجات)، من توفير منتج معين، سنُبلغك في أقرب وقت ممكن وسنقوم بإلغاء طلبك بالكامل</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تخضع جميع الطلبات للقبول. ونحتفظ بالحق في رفض أو إلغاء الطلب لأي سبب من الأسباب، بما في ذلك عدم الدقة أو وجود أخطاء في المنتج أو في معلومات التسعير، أو عدم تمكننا من الحصول على إذن بتحصيل الثمن، أو لأن ثمة قيود على التوصيل تنطبق على قطعة بعينها، أو لأن القطعة المطلوبة لا تفي بمعايير مراقبة الجودة التي نطبقها ويجري سحبها، أو لأنك لا تفي بمعايير الأهلية المنصوص عليها في الشروط والأحكام أو بسبب أي مشكلة أخرى نكتشفها</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">سوف تحتفظ الكويتية ستور بسجل للمعاملات الخاصة بك لمدة لا تقل عن عشر سنوات وستبقي ذلك السجل لمدة معقولة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">بمجرد أن يُوضع الطلب الخاص بك، سوف تتلقى رسالة بريد إلكتروني تتضمن تفاصيل طلبك. ولا تُعد رسالة البريد الإلكتروني هذه قبولاً لطلبك، بل هي تأكيد على أننا قد تلقينا طلبك</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">في حالة عدم إلغاء الطلب، سيكون قبول طلبك قد اكتمل عند انتهائنا من تعبئته. \ وعليه، يُبرَم عقد البيع في دولة الكويت في لحظة الموافقة، وستكون لغة العقد هي اللغة العربية. وليس من سلطة معالج الدفع الذي يمثل طرفاً ثالثاً نستعين به ولا شركة النقل التي نرشحها قبول طلب نيابةً عن الكويتية ستور</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يجوز لنا رفض معالجة معاملة ما لأي سبب من الأسباب وكذلك يجوز لنا رفض الإرسال لأي شخص في أي وقت وفقاً لتقديرنا الحصري والمطلق. ولن نتحمل مسؤولية تجاهك أو تجاه أي طرف ثالث عن سحبنا لأي منتج، بما في ذلك أي عينات أو هدايا مع عمليات الشراء، من الموقع الإلكتروني، سواء بِيع أو لم يُبع هذا المنتج، كما لا نتحمل أي مسؤولية عن حذفنا أو اختبارنا أو تدقيقنا أو تحريرنا لأي مواد أو محتوى على الموقع الإلكتروني، أوعن رفضنا معالجة معاملة ما، أو عن إبطال أو تعليق أي معاملة بعد الشروع في عملية المعالجة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">نبذل كل ما في وسعنا للتأكد من دقة جميع التفاصيل الواردة على الموقع الإلكتروني، ومع ذلك قد نكتشف من وقت لآخر خطأ في أسعار المنتجات. وفي حال اكتشفنا وجود خطأ في سعر منتج مُدرَج في طلبك، سنقوم بإبلاغك في أقرب وقت ممكن. ولن نكون ملزمين بقبول أو تنفيذ طلب لمنتج أُعلن عنه بسعر غير صحيح، ونحتفظ بالحق في إلغاء هذا الطلب الذي قُبل بالفعل أو الذي يكون في طريقه إليك. وفي حال طلبك منتجاً يحمل سعراً خاطئاً، سوف نرسل رسالة بريد إلكتروني لك أو نتصل بك هاتفياً لإبلاغك بأننا لم نقبل طلبك و/ أو بأن طلبك قد أُلغي. وفي حال كنت قد دفعت بالفعل ثمن المنتج (المنتجات)، سوف نقوم برد المبلغ كاملاً في أقرب وقت يمكننا فيه ذلك. وفي حال استرجاع تلك المنتجات وهي في طريقها إليك، سنقوم بمعالجة عملية رد المبلغ إليك بمجرد استلامنا للمنتجات</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">بتأكيد عملية الشراء الخاصة بك في نهاية معالجة الطلب، يكون ذلك موافقة منك على قبول ودفع كامل المبلغ المستحق عن المنتج (المنتجات) على النحو المبين في طلبك، بما في ذلك أي رسوم توصيل تسري على هذا الطلب</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;.3&nbsp;</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الأسعار وسياسة الدفع</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تشمل الأسعار في الموقع كافة الالتزامات من تخليص جمركي وشحن واجور ميناء وغيرها .. الى مستودعنا بالكويت.</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تخضع جميع أشكال الدفع عن طريق بطاقات الائتمان لعمليات تحقق من صحة البيانات وتفويض من قبل جهة إصدار البطاقة. وإذا رفضت جهة إصدار بطاقة الائتمان الإذن بالدفع، لن نتحمل مسؤولية عن أي تأخير أو عدم التسليم. وسوف نقوم بإلغاء طلبك وقد نقوم بالاتصال بك لاختيار طريقة بديلة للدفع</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يجب أن تطابق البيانات الواردة على بطاقة الائتمان المستخدمة في الدفع مع معلومات حامل بطاقة الائتمان بالضبط، تلك المعلومات المسجلة لدى جهة إصدار البطاقة. سيتم الموافقة على الدفع ووضعه في الانتظار عند وضع طلبك وسوف يُخصم المبلغ من حسابك عند انتهاء الكويتية ستور من ارسال طلبك. كما أنك تؤكد على أن بطاقة الائتمان المستخدمة هي بطاقتك أو على أنه قد تم الإذن لك تحديداً من قبل مالك بطاقة الائتمان باستخدامها</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">لن تُخزن أي بيانات لبطاقات ائتمان أو تباع إلى أو تُعرض على أو تؤجر لأي أطراف ثالثة باستثناء ما يتعلق بمقدم خدمة بوابة الدفع عبر الإنترنت الذي نستعين به</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">.4</span><span dir="RTL"></span><span dir="RTL"></span><span style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="RTL"></span><span dir="RTL"></span>&nbsp;<span lang="AR-SA">التسليم والتوصيل والتخزين</span></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تعتمد مدة توصيل المنتجات المطلوبة على فترة التصنيع وخطوط الإنتاج بالمصانع وكذلك بالإضافة لفترة الشحن التي تعتمد على الخطوط الملاحية ومدى توفره</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">جميع المنتجات التي يتم طلبها من الصين تستغرق مدة توصيل من شهر الى ثلاث أشهر تقريباً في الظروف العادية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الشركة غير مسؤولة عن أي تأخير ناجم عن أي ظروف أخرى خارجة عن إرادة الشركة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يتم تسليم جميع المنتجات في موقع مستودعات الشركة ولا يوجد توصيل داخلي بالكويت ما لم يذكر خلاف ذلك اثناء طلب المنتج من قبل العميل</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يتم تسليم جميع الطلبات للأشخاص الذين قاموا بطلبها من الموقع بعد التحقق عن طريق البطاقة الشخصية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">ستضاف رسوم التوصيل، إن وجدت، إلى سعر الطلب، وستُعرض بعملتك المحلية على نحو منفصل في استمارة الطلب خلال عملية فحص ومراجعة الدفع</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">في حال عدم وجود أحد لاستلام الطلب، سيكون لديك خيار ترتيب موعد توصيل بديل أو الحصول على معلومات إضافية حول استلام طلبك من شركة توصيل الطلبات.. وإذا لم تتمكن من استلام طلبك في محاولة التسليم الثانية، فقد تضطر إلى دفع رسوم توصيل إضافية مقابل أي محاولة توصيل أخرى</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">فترة وضع بضاعة العملاء في مخازن الشركة هي مده أقصاها 15 يوم من تاريخ إعلام العميل بوصولها عن طريق بيانات التواصل المسجلة لدينا او عن طريق صفحات الشركة بمواقع التواصل الاجتماعي او عن طريق الموقع الرسمي</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">وفي حال انتهاء فترة التخزين، ولم يقوم العميل باستلام بضاعته، يحق للشركة إلغاء الفاتورة وبيع البضاعة، ويحق للعميل استرداد مبلغ الفاتورة بعد خصم 25% من قيمتها، ولا يتم تعويض العميل عن مبلغ خدمة التخزين.</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يجري توصيل الطلبات من يوم السبت إلى الخميس، باستثناء يوم الجمعة والعطلات الرسمية</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>&nbsp;.5</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">سياسة الإلغاء والضمان والاستبدال</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">الإلغاء</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يحق للعميل إلغاء الطلبية في مدة أقصاها 3 أيام من تاريخ الطلب</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">لا يحق للعميل إلغاء الطلب او استبداله بأي منتج أخر بعد إرسال الطلبيات للموردين أو المصانع في الصين للبدء في عملية التصنيع</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">يحق للشركة في حال تعذر توفر المنتجات المطلوبة او توقف إنتاجها او عدم التمكن من توفيرها لاي سبب من الأسباب بإلغاء الطلبيات واسترجاع المبالغ للعملاء</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">الضمان&nbsp;</span></b><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">والاستبدال<span style="border: 1pt none windowtext; padding: 0cm;"><o:p></o:p></span></span></b></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 13pt; color: rgb(33, 37, 41);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 13pt; color: rgb(33, 37, 41);"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تضمن الكويتية ستور جميع المنتجات ضمان تشغيلي لمدة 10 أيام من تاريخ التسليم</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">في حالة وجود عيب أو عيوب في التصنيع خلال فترة الضمان</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>:</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- تقوم الشركة باستبداله بمنتج جديد إذا كان متوفراً بمستودعات الشركة نفس نوعية الجهاز</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- أو يتم استبدال المنتج المعطوب بمنتج آخر تحدده الشركة حسب المنتجات المتاحة لديها على ألا تتعدى قيمته قيمة المنتج المعطوب</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- في حالة عدم توفر المنتج بمستودعات الشركة فيجب على العميل الانتظار لمدة تتراوح من شهرين الى ثلاثة أشهر وذلك لكي تتمكن الشركة من استيراد او صيانة المنتج من المصنع</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- في حالة عدم توفر أي من الحلول أعلاه يتم استرداد المبلغ الذي دفعه العميل نظير المنتج المعيب</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- الضمان لا يشمل الأضرار الناتجة عن الحوادث، أو سوء الاستخدام أو الاستخدام الخاطئ، أو إنسكاب السوائل، أو غيرها من الأسباب الخارجية.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- نحن نُطبق سياسة بعض مراكز الخدمة التي قد تطلب منك دفع مبلغ مالي مقابل المنتجات التي تم تصنيفها خارج الضمان وقمت أنت برفض ثمن الإصلاح<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">- يشترط عند استبدال المنتجات ان تكون بحالتها الأصلية كما تم استلامها من الكويتية ستور.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">العروض وكوبون الخصم</span></b><span dir="LTR"></span><span dir="LTR"></span><b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;"><span dir="LTR"></span><span dir="LTR"></span>:</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">يمكنك الاستفادة من خصم الفيزا، خصم أبل باي كـ خصم إضافي مع كوبون الخصم والعروض والمنتجات المخفضة.</span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">ولا يمكن استخدام الخصومات الآخر مثل: كوبون الخصم، على العروض والمنتجات المخفضة.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;"><br><br></span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">نظام التذاكر:</span></b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">حرصاً منا على إرضاء العميل وتقوية طرق التواصل بالطريقة السليمة، أطلقنا نظام التذاكر مما يسمح للعميل بإرسال تذكرة من خلال الطلب في حال رغبة العميل بالتواصل مع فريق خدمة عملاء&nbsp;</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الكويتية ستور<span style="border: 1pt none windowtext; padding: 0cm;">.</span><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">يتم البدء في التواصل مع العميل خلال 24 ساعة.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">لا يمكن للعميل إرسال أكثر من تذكرة في حال وجود تذكرة مفتوحة على نفس الطلب.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">على العميل اختيار العنوان الصحيح وكتابة التفاصيل مع شرح سبب التواصل وإرفاق صورة في حال تطلب الأمر ليسهل على خدمة العملاء حل المشكلة مباشرة.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">سوف يتم تنبيه العميل في حال وجود تحديث من فريق خدمة عملاء&nbsp;</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">الكويتية ستور&nbsp;<span style="border: 1pt none windowtext; padding: 0cm;">عبر إشعارات التطبيق والبريد الإلكتروني.</span><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">يتم إغلاق التذكرة بعد حل المشكلة ويتم تنبيه العميل بإغلاقها.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">تغلق التذكرة تلقائياً في حال عدم وجود رد من العميل خلال 72 ساعة.</span><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;</span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">أحكام متفرقة</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">نحن نحتفظ بالحق في تعديل هذه الشروط والأحكام في أي وقت دون سابق إنذار لك. وتسري أي تعديلات على هذه الشروط والأحكام بمجرد نشرها على موقعنا الإلكتروني. ويعني استمرارك في استخدام الموقع الإلكتروني (أو أي من مواقعنا الإلكترونية الأخرى) بعد إجراء تغيير من هذا القبيل موافقتك على الالتزام بالشروط والأحكام المعدلة. ويُرجى قراءة الشروط والأحكام والاطلاع عليها مراراً وتكراراً. وفي حال لم تكن موافقاً على أي تغيير في الشروط والأحكام، يجب عليك عندئذ التوقف فوراً عن استخدام الموقع الإلكتروني</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تشكل هذه الشروط والأحكام كامل الاتفاق القانوني بينك وبين الكويتية ستور ، وتحكم وتنظم استخدامك للموقع الإلكتروني وجميع الخدمات والمنتجات المتاحة عليه، وتحل تماماً محل أي اتفاقيات سابقة بينك وبين الكويتية ستور فيما يتعلق بالغرض نفسه</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">أنت تقر وتوافق على أنه قد يتغير شكل وطبيعة الخدمات من وقت لآخر دون إشعار مُسبق لك، ويجوز لـ الكويتية ستور التوقف عن تقديم الخدمات (أو عن تقديم أي ميزات مُضمَّنة فيها) لك أو للمستخدمين</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">أنت تتفهم وتدرك أن الكويتية ستور تمنح مشغلي محركات البحث العامة الإذن باستخدام عناكب الشبكة لنسخ مواد من الموقع للغرض الوحيد المتمثل في إنشاء مؤشرات بحث متوفرة للجمهور تتضمن المواد، وتحتفظ الكويتية ستور بالحق في إلغاء هذه الاستثناءات، سواء بوجه عام أو في حالات محددة</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">أنت تتفهم وتدرك أنك وحدك المسؤول (وأن الكويتية ستور ليست مسؤولة تجاهك أو تجاه أي طرف ثالث) عن أي خرق لالتزاماتك بموجب الشروط والأحكام وعن النتائج المترتبة (بما في ذلك أي خسارة أو ضرر قد تتكبده الكويتية ستور) على أي خرق من هذا القبيل</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">لا يجوز تفسير عدم ممارسة أو إنفاذ الكويتية ستور ، أو تأخرها في ممارسة أو إنفاذ، أي حق أو سبيل انتصاف قانوني على أنه تنازل رسمي عن حقوق الكويتية ستور</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">أنت و الكويتية ستور متعاقدان مستقلان، وهذه الشروط والأحكام، بما يشمل على سبيل المثال لا الحصر تقديم أو نقل أو بث أو توزيع المحتوى الخاص بك، سواء كلياً أو جزئياً، لا تشكلان علاقة شراكة أو مشروعاً مشتركاً أو عملاً أو امتيازاً أو وكالة بينك وبين الكويتية ستور. ولن يكون لأي طرف من الطرفين سلطة إلزام الطرف الآخر أو تحميله التزامات نيابةً عنه بدون موافقة خطية مُسبقة من الطرف الآخر. وكلا الطرفين غير مفوَّض بالتصرف كوكيل أو ممثل للطرف الآخر أو نيابةً عن الطرف الآخر بأي صفة أخرى غير منصوص عليها صراحةً في الشروط والأحكام. ولا يجوز لأي طرف (أو لأي من وكلائه) التصريح بأنه يمثل الطرف الآخر أو مخولاً للتصرف كممثل له أو اعتبار نفسه ممثلاً له، كما لا يجوز لأي طرف أن يحمِّل الطرف الآخر أي مسؤولية أو التزام نيابةً عنه أو باسمه، ما لم ينص على ذلك تحديداً في هذه الشروط والأحكام</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">إذا ثبت أن أي نص من نصوص هذه الشروط والأحكام غير قانوني أو غير قابل للتنفيذ، لا تتأثر الشروط والأحكام الأخرى وتظل نافذة وسارية المفعول تماماً</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">هذه الشروط والأحكام متوفرة باللغتين الإنجليزية والعربية. وفي حال وُجد أي تعارض بين النص الإنجليزي والنص العربي، يسود النص العربي</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">تخضع هذه الشروط والأحكام لقوانين دولة الكويت ، وتخضع جميع المنازعات التي تنشأ عن إنفاذ هذه الأحكام والشروط للاختصاص القضائي الحصري لمحاكم دولة الكويت</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><b><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt; border: 1pt none windowtext; padding: 0cm;">حقوقك</span></b><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">إذا كان لديك أي أسئلة حول الشروط والأحكام أو أي جانب من جوانب النظام الخاص بك</span><span dir="LTR"></span><span dir="LTR"></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>.<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><o:p>&nbsp;</o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"><span lang="AR-SA" style="font-family: Arial, sans-serif; font-size: 10.5pt;">نرجو منك التواصل معنا عبر البريد الالكتروني</span><span dir="LTR"></span><span dir="LTR"></span><span lang="AR-SA" dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;"><span dir="LTR"></span><span dir="LTR"></span>&nbsp;</span><span dir="LTR"><a href="mailto:info@q8store.co"><span style="font-family: Arial, sans-serif; font-size: 10.5pt;">info@q8store.co</span></a></span><span dir="LTR" style="font-family: Arial, sans-serif; font-size: 10.5pt;">&nbsp;&nbsp;<o:p></o:p></span></p><p class="MsoNormal" dir="RTL" style="margin-bottom: 0cm; text-align: justify; line-height: normal;"></p><p class="MsoNormal" dir="RTL" style="text-align: justify;"><span dir="LTR"><o:p>&nbsp;</o:p></span></p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="subscribe" id="sec_block_subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="join">
+                    <i class="far fa-envelope"></i>
+                    <h3>اشترك بالقائمة البريدية</h3>
+                </div>
+                <div class="sub_p">
+                    <p>اشترك في النشرة البريدية لدينا للحصول على آخر تحديثات المنتجات</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-3">
+                    <form class="form_subscribe" action="#">
+                        <input type="email" v-model="email" class="form-control" placeholder="بريدك الالكتروني ....">
+                        <button type="button" @click="store_mailing_list" class="btn btn_subscribe" id="button-addon1">
+                            اشتراك
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="alert alert-danger dan_alert_mailing_list hidden" role="alert">
+            </div>
+            <div class="alert alert-success suc_alert_mailing_list hidden" role="alert ">
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="logo_sec">
+                    <div class="ft_logo">
+                        <a href="index.html"><img src="http://167.99.143.115/website_v3/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="logo_p">
+                        <p>نحن دائماً جاهزون لمساعدتك</p>
+                        <p>تواصل معنا من خلال أي من قنوات الدعم التالية :</p>
+
+
+
+                    </div>
+                    <div class="logo_social">
+                        <ul class="social_media clearfix">
+                            <li><a href="https://www.instagram.com/q8chine" target="_blank"><img src="http://167.99.143.115/website_v3/img/ins.svg" alt="..."></a></li>
+                            <li><a href="#" target="_blank"><img src="http://167.99.143.115/website_v3/img/lin.svg" alt="..."></a></li>
+                            <li><a href="https://twitter.com/live_chinaq8" target="_blank"><img src="http://167.99.143.115/website_v3/img/tw.svg" alt="..."></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCY4uImpSU4emUfpVIavPfTg/videos" target="_blank"><img src="http://167.99.143.115/website_v3/img/yo.svg" alt="..."></a></li>
+                            <li><a href="https://www.facebook.com/q8china/" target="_blank"><img src="http://167.99.143.115/website_v3/img/f.svg" alt="..."></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="f_box">
+                    <h2 class="ft_title">إيدي ... أيدي سعودية</h2>
+                    <ul class="ft_menu clearfix">
+                        <li><a href="http://167.99.143.115/ar/about-us"> عن إيدي ستور</a></li>
+                        <li><a href="http://167.99.143.115/ar/terms">الشروط والاحكام</a></li>
+                        <li><a href="http://167.99.143.115/ar/privacy-policy">سياسة الخصوصية</a></li>
+                        <li><a href="http://167.99.143.115/ar/return-policy"> سياسة والاستبدال </a></li>
+                        <li><a href="http://167.99.143.115/ar/shipping-and-delivery">الشحن والتوصيل</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="f_box contact">
+                    <h2 class="ft_title">ابق على تواصل معنا</h2>
+                    <ul class="ft_menu clearfix">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> ومن هنا وجب على المصمم أن يضع نصوصا
+                                مؤقتة على التصميم ليظهر للعميل</a></li>
+                        <li><a href="tel:0096568886446" target="_blank"><i class="fas fa-phone"></i> 0096568886446</a></li>
+                        <li><a href="https://wa.me/0096568886446" target="_blank"><i class="fas fa-phone"></i> الواتساب</a></li>
+
+
+
+                        <li><a href="mailto:info@q8store.co" target="_blank"><i class="far fa-envelope"></i> info@q8store.co</a></li>
+                        <li><a onclick="open_chat()" target="_blank"><i class="far fa-envelope"></i> المحادثة الحية</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container d-flex align-items-center">
+            <div class="copy_right">
+                <p>جميع الحقوق محفوظة لمتجر إيدي © 2020</p>
+            </div>
+            <div class="copy_right mr-auto"><p>تم تطويره بواسطة <span>فايبرز للحلول التقنية</span></p></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="http://167.99.143.115/website_v3/js/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="http://167.99.143.115/website_v3/js/wow.min.js"></script>
+<script src='/website_v2/js/jquery.zoom.js'></script>
+
+<script src="http://167.99.143.115/website_v3/js/script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+<script src="http://167.99.143.115/js/app.js"></script>
+<script src="http://167.99.143.115/admin_assets/assets/general/js/vee_vue.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/admin_assets/assets/general/js/general.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/website_v3/general/js/general.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/website_v3/general/js/notify.min.js" type="text/javascript"></script>
+
+
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut();
+    });
+</script>
+
+
+
+
+<script>
+    $(document).on('click', '#kareem', function (e) {
+        var formData = new FormData($('#form_search_category')[0]); //get all data in form
+        $.ajax({
+            type: 'get',
+            enctype: 'multipart/form-data',
+            url: "http://167.99.143.115/ar/category_search",
+            data: formData, // send this data to controller
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function (data) {
+                if (data.status === true) {
+                    // console.log(data);
+                    // showAllPosts();
+                }
+            }, error: function (reject) {
+
+            }
+        });
+    });
+
+</script>
+
+
+<script>
+    function open_chat() {
+        LiveChatWidget.call('maximize')
+    }
+
+    window.__lc = window.__lc || {};
+    window.__lc.license = 12473325;
+    ;(function (n, t, c) {
+        function i(n) {
+            return e._h ? e._h.apply(null, n) : e._q.push(n)
+        }
+
+        var e = {
+            _q: [], _h: null, _v: "2.0", on: function () {
+                i(["on", c.call(arguments)])
+            }, once: function () {
+                i(["once", c.call(arguments)])
+            }, off: function () {
+                i(["off", c.call(arguments)])
+            }, get: function () {
+                if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                return i(["get", c.call(arguments)])
+            }, call: function () {
+                i(["call", c.call(arguments)])
+            }, init: function () {
+                var n = t.createElement("script");
+                n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+            }
+        };
+        !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+    }(window, document, [].slice))
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="http://167.99.143.115/website_v3/js/owl.carousel.min.js"></script>
+<script src="http://167.99.143.115/website_v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="http://167.99.143.115/website_v3/js/jquery.ui.slider-rtl.js"></script>
+<script src="http://167.99.143.115/website_v3/js/script.js"></script>
+
+
+</body>
+</html>

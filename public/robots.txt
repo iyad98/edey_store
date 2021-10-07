@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+User-agent: Googlebot-Image
+Allow:/
+User-agent:Googlebot-mobile
+allow:/
+sitemap: http://raqshop.com/sitemap.xml

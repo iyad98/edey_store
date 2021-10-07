@@ -1,0 +1,649 @@
+[
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الرياض",
+    "country_en": "Saudi Arabia",
+    "city_en": "Riyadh",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "مكة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Makkah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "المدينة المنورة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Medina",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "بريدة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Buraidah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "تبوك",
+    "country_en": "Saudi Arabia",
+    "city_en": "Tabuk",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الدمام",
+    "country_en": "Saudi Arabia",
+    "city_en": "Dammam",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الاحساء",
+    "country_en": "Saudi Arabia",
+    "city_en": "Hasa",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "القطيف",
+    "country_en": "Saudi Arabia",
+    "city_en": "Qatif",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "خميس مشيط",
+    "country_en": "Saudi Arabia",
+    "city_en": "Khamis Mushait",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الطائف",
+    "country_en": "Saudi Arabia",
+    "city_en": "Taif",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "نجران",
+    "country_en": "Saudi Arabia",
+    "city_en": "Najran",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "حفر الباطن",
+    "country_en": "Saudi Arabia",
+    "city_en": "Hafr Al-Batin",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الجبيل",
+    "country_en": "Saudi Arabia",
+    "city_en": "Jubail",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "ضباء",
+    "country_en": "Saudi Arabia",
+    "city_en": "Duba",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الخرج",
+    "country_en": "Saudi Arabia",
+    "city_en": "The output",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الثقبة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Foramen",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "ينبع البحر",
+    "country_en": "Saudi Arabia",
+    "city_en": "sea's origin",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الخبر",
+    "country_en": "Saudi Arabia",
+    "city_en": "The news",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "عرعر",
+    "country_en": "Saudi Arabia",
+    "city_en": "Arar",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الحوية",
+    "country_en": "Saudi Arabia",
+    "city_en": "Hawiyah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "عنيزة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Unayzah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "سكاكا",
+    "country_en": "Saudi Arabia",
+    "city_en": "Sakaka",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "جازان",
+    "country_en": "Saudi Arabia",
+    "city_en": "Jazan",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "القريات",
+    "country_en": "Saudi Arabia",
+    "city_en": "Qurayyat",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الظهران",
+    "country_en": "Saudi Arabia",
+    "city_en": "Dhahran",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الباحة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Patio",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الزلفي",
+    "country_en": "Saudi Arabia",
+    "city_en": "Zelfi",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الرس",
+    "country_en": "Saudi Arabia",
+    "city_en": "Alrass",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "وادي الدواسر",
+    "country_en": "Saudi Arabia",
+    "city_en": "Wadi Al-Dawasir",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "بيشه",
+    "country_en": "Saudi Arabia",
+    "city_en": "Bisha",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "سيهات",
+    "country_en": "Saudi Arabia",
+    "city_en": "Saihat",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "شروره",
+    "country_en": "Saudi Arabia",
+    "city_en": "Its evils",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "بحره",
+    "country_en": "Saudi Arabia",
+    "city_en": "By sea",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "تاروت",
+    "country_en": "Saudi Arabia",
+    "city_en": "Tarot",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الدوادمي",
+    "country_en": "Saudi Arabia",
+    "city_en": "Dawadmi",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "صبياء",
+    "country_en": "Saudi Arabia",
+    "city_en": "Boy",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "بيش",
+    "country_en": "Saudi Arabia",
+    "city_en": "Bish",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "أحد رفيدة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Nobody's help",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الفريش",
+    "country_en": "Saudi Arabia",
+    "city_en": "Fresh",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "بارق",
+    "country_en": "Saudi Arabia",
+    "city_en": "Glamorous",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الحوطة",
+    "country_en": "Saudi Arabia",
+    "city_en": "Al-Hotah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "المملكة العربية السعودية",
+    "city_ar": "الأفلاج",
+    "country_en": "Saudi Arabia",
+    "city_en": "Aflaj",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "دبي",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Dubai",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "أبوظبي",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Abu Dhabi",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "الشارقة",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Sharjah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "العين",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Eye",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "رأس الخيمة",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Ras Al Khaimah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "عجمان",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Ajman",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "الفجيرة",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Fujairah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "أم القيوين",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Umm Al Quwain",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "خورفكان",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Khorfakkan",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الإمارات العربية المتحدة",
+    "city_ar": "دبا الحصن",
+    "country_en": "The United Arab Emirates",
+    "city_en": "Dibba Al-Hisn",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "مسقط",
+    "country_en": "Amman",
+    "city_en": "Muscat",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "صحار",
+    "country_en": "Amman",
+    "city_en": "Sohar",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "نزوى",
+    "country_en": "Amman",
+    "city_en": "whimsical",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "صور",
+    "country_en": "Amman",
+    "city_en": "photo",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "قلهات",
+    "country_en": "Amman",
+    "city_en": "Qalhat",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "عمان",
+    "city_ar": "صلالة",
+    "country_en": "Amman",
+    "city_en": "Salalah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "العاصمة",
+    "country_en": "Kuwait",
+    "city_en": "Capital",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "الأحمدي",
+    "country_en": "Kuwait",
+    "city_en": "Ahmadi",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "الفروانية",
+    "country_en": "Kuwait",
+    "city_en": "Al Farwaniyah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "الجهراء",
+    "country_en": "Kuwait",
+    "city_en": "Jahra",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "حولي",
+    "country_en": "Kuwait",
+    "city_en": "around me",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "الكويت",
+    "city_ar": "مبارك الكبير",
+    "country_en": "Kuwait",
+    "city_en": "Mubarak Al-Kabeer",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "المنامة",
+    "country_en": "Bahrain",
+    "city_en": "Manama",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "المحرق",
+    "country_en": "Bahrain",
+    "city_en": "Muharraq",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "الرفاع الغربي",
+    "country_en": "Bahrain",
+    "city_en": "West Riffa",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "مدينة حمد",
+    "country_en": "Bahrain",
+    "city_en": "Hamad town",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "قرية عالي",
+    "country_en": "Bahrain",
+    "city_en": "Aali village",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "قرية الدراز",
+    "country_en": "Bahrain",
+    "city_en": "Al-Diraz Village",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "سترة",
+    "country_en": "Bahrain",
+    "city_en": "Jacket",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "السنابس",
+    "country_en": "Bahrain",
+    "city_en": "Sanabis",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "جد حفص",
+    "country_en": "Bahrain",
+    "city_en": "Jid Hafs",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "المالكية",
+    "country_en": "Bahrain",
+    "city_en": "Malikiyah",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "البحرين",
+    "city_ar": "قرية سار",
+    "country_en": "Bahrain",
+    "city_en": "A delightful village",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "بنزرت",
+    "country_en": "Tunisia",
+    "city_en": "Bizerte",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "تونس",
+    "country_en": "Tunisia",
+    "city_en": "Tunisia",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "أريانة",
+    "country_en": "Tunisia",
+    "city_en": "Ariana",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "منوبة",
+    "country_en": "Tunisia",
+    "city_en": "An alternate",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "بن عروس",
+    "country_en": "Tunisia",
+    "city_en": "Bin Arous",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "زغوان",
+    "country_en": "Tunisia",
+    "city_en": "Zaghouan",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "نابل",
+    "country_en": "Tunisia",
+    "city_en": "Nabeul",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "صفاقس",
+    "country_en": "Tunisia",
+    "city_en": "Sfax",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "القيروان",
+    "country_en": "Tunisia",
+    "city_en": "Kairouan",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "تونس",
+    "city_ar": "تطاوين",
+    "country_en": "Tunisia",
+    "city_en": "Tataouine",
+    "عمود5": ""
+  },
+  {
+    "country_ar": "",
+    "city_ar": "",
+    "country_en": "",
+    "city_en": "",
+    "عمود5": ""
+  },
+  {
+    "country_ar": ""
+  }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5d9302d9-c222-45c2-8b69-a9da49fc3f03" name="Edey" url="http://167.99.143.115">
+        <fileTransfer rootFolder="/var/www/html/HRC" accessType="SFTP" host="167.99.143.115" port="22" sshConfigId="d6b425a4-9add-47b3-9055-e89796070f9f" sshConfig="root@167.99.143.115:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

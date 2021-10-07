@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="A1JbjCL5XiCv46zC6zlxegZgna1kfdE9srxZjyuH">
+    <title>
+         انهاء الطلب - إيدي ستور | Edey Store     </title>     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://167.99.143.115/website_v3/css/animate.min.css">
+    <link href="http://167.99.143.115/website_v3/css/all.css" rel="stylesheet">
+    <link href="http://167.99.143.115/website_v3/css/fontawesome-all.css" rel="stylesheet">
+    <link href="http://167.99.143.115/website_v3/css/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="http://167.99.143.115/website_v3/css/owl.theme.default.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="http://167.99.143.115/website_v3/css/lightslider.css"/>
+    <link type="text/css" rel="stylesheet" href="http://167.99.143.115/website_v3/css/lightgallery.css"/>
+    <link href="http://167.99.143.115/website_v3/css/style.css" rel="stylesheet">
+
+
+<!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://167.99.143.115/website_v3/css/responsive.css" rel="stylesheet">
+    <script src="http://167.99.143.115/website_v3/js/jquery-1.12.2.min.js"></script>
+    <meta property="al:ios:url" content="https://apps.apple.com/ae/app/infltr-infinite-filters/id935623257"/>
+    <meta property="al:ios:app_name" content="Example App"/>
+    <meta property="al:ios:app_store_id" content="935623257"/>
+    <meta property="al:android:package" content="com.example.client"/>
+    <meta property="al:android:app_name" content="Example App"/>
+    <meta property="al:android:url" content="example://test"/>
+    <style>
+        .slider img {
+            border-radius: 0px !important;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .alert {
+            text-align: right;
+        }
+
+        .loader-wrapper {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 99999;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .loader-wrapper .loader5 {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            margin-left: 10%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        .loader-wrapper .loader5 .dot {
+            width: 12px;
+            height: 12px;
+            background: #f06274;
+            border-radius: 100%;
+            display: inline-block;
+            animation: slide 1.2s infinite;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(1) {
+            animation-delay: 0.1s;
+            background: #f06274;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(2) {
+            animation-delay: 0.2s;
+            background: #f06274;
+        }
+
+        .loader-wrapper .loader5 .dot:nth-child(3) {
+            animation-delay: 0.3s;
+            background: #f06274;
+        }
+
+        .overlay .btn {
+            width: 126px;
+            height: 46px;
+            background-color: #ffffff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+            border-radius: 0;
+        }
+
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+            border-width: 0.2em;
+            margin-bottom: 6px;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .custom-map-control-button {
+            width: 50px !important;
+            height: 40px !important;
+            left: 10px !important;
+            top: 10px !important;
+        }
+
+        .gm-style-iw-d div {
+            text-align: center;
+        }
+    </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+<input type="hidden" value="http://167.99.143.115/ar" id="get_url">
+<input type="hidden" value="http://167.99.143.115" id="get_source_url">
+<input type="hidden" value="ar" id="get_lang">
+<!-- preloader -->
+<div id="preloader">
+    <div id="spinner">
+        <div class="floating">
+            <img src="http://167.99.143.115/website_v3/img/logo.png" alt="إيدي ستور" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <header id="header">
+            <div class="msg_header" style="background-color:#50eaed;">
+                            <div class="msg_header">
+                    <div class="container">
+                        <p class="msg_top"
+                           style="color: #ffffff;">✌ مرحباً بك ... نتشرف بخدمتك و إستقبال طلباتك ✌</p>
+                    </div>
+                </div>
+                    </div>
+    
+    <div class="middle_header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo_site">
+                    <a href="http://167.99.143.115"><img src="http://167.99.143.115/website_v3/img/logo.png" alt="إيدي ستور"></a>
+                </div>
+                <div class="haeder_widget">
+                    <div class="search_head">
+                        <form class="form_search_head" action="#" id="form_search_category" method="get">
+                            <input type="hidden" name="_token" value="A1JbjCL5XiCv46zC6zlxegZgna1kfdE9srxZjyuH">                            <input type="text" name="name" id="category_name" class="form-control"
+                                   placeholder="ابحث هنا عن المنتج أو التاجر">
+                            <span class="search_icon" id="kareem"><i class="far fa-search"></i></span>
+                            <div class="itm_us search_drop dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <span>التصنيف</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown_profile cat">
+                                                                            <li id="category_name" value="1"><a>أجهـــــزة كهـربــائيــــــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="11"><a>الـمــنــزل والــمــطـبــخ</a>
+                                        </li>
+                                                                            <li id="category_name" value="18"><a>الأثـــــاث الــــمـــنـــزلـــي</a>
+                                        </li>
+                                                                            <li id="category_name" value="21"><a>الأدوات الـريـاضــيــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="24"><a>الــعــنــايــة والــجـمـال</a>
+                                        </li>
+                                                                            <li id="category_name" value="29"><a>الإلكـتـــــــرونـيــــــــــــــــــات</a>
+                                        </li>
+                                                                            <li id="category_name" value="31"><a>الأطــفــال والألــعــاب</a>
+                                        </li>
+                                                                            <li id="category_name" value="32"><a>الأدوات الــــزراعــــيــــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="33"><a>الـحـيـوانـات الألـيـفــة</a>
+                                        </li>
+                                                                            <li id="category_name" value="34"><a>صــــفــــقـــــة الـــــيـــــوم</a>
+                                        </li>
+                                                                            <li id="category_name" value="35"><a>الـتـسـلـيـم الـــفــوري</a>
+                                        </li>
+                                                                            <li id="category_name" value="36"><a>الــشــوي والــرحـــلات</a>
+                                        </li>
+                                                                            <li id="category_name" value="46"><a>الـــــــعـــــــدد والأدوات</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                        <div class="user_action_head clearfix">
+                            <div class="itm_us gru_search">
+                                <div class="header_search-button"></div>
+                            </div>
+                            <div class="itm_us fav dropdown notifications_list">
+                                <a href="#" class="btn_user_profile " data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <img src="http://167.99.143.115/website_v3/img/noti_icon.svg" alt="notifications">
+                                    <span class="budge_cart">2</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown_profile">
+                                    <li>
+                                        <div class="single_noti">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="noti_icon">
+                                                        <img src="http://167.99.143.115/website_v3/img/noti.svg" alt="..">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="noti_content">
+                                                        <h5><span>طلب جديد ,</span> هناك حقيقة مثبتة منذ زمن طويل وهي أن
+                                                            المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                                                            الخارجي للنص</h5>
+                                                        <span><img src="http://167.99.143.115/website_v3/img/noti3.svg'" alt=""> 12/21/2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="single_noti">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="noti_icon">
+                                                        <img src="http://167.99.143.115/website_v3/img/noti2.svg" alt="..">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="noti_content">
+                                                        <h5><span>رسالة من الإدارة ,</span> هناك حقيقة مثبتة منذ زمن
+                                                            طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                                                            على الشكل الخارجي للنص</h5>
+                                                        <span><img src="http://167.99.143.115/website_v3/img/noti3.svg" alt=""> 12/21/2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <a href="notifications.html">شاهد كل الاشعارات</a>
+                                </ul>
+                            </div>
+                            <div class="itm_us gru_cart">
+                                <a href="http://167.99.143.115/ar/cart" class="btn_cart"
+                                   id="get-cart-simple-data">
+                                    <img src="http://167.99.143.115/website_v3/img/cart.svg" alt="السلة">
+                                    <span class="budge_cart" v-text="count_quantity">0</span>
+                                </a>
+                            </div>
+                            <div class="itm_us gru_cart" id="get-cart-data">
+                                <a href="http://167.99.143.115/ar/wishlist" class="btn_cart"
+                                   id="get-cart-simple-data">
+                                    <img src="http://167.99.143.115/website_v3/img/hearts.svg" alt="السلة">
+                                    
+                                    <h1> {{ count_favorites }}</h1>
+                                </a>
+                            </div>
+
+
+                            <div class="itm_us gru_profile_mobile dropdown">
+                                                                    <a href="#" class="btn_user_profile dropdown-toggle" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <img src="http://167.99.143.115/website_v3/img/feather-user.svg" alt="بروفايل">
+                                        <span>الملف الشخصي</span>
+                                    </a>
+                                                            </div>
+                            <div class="itm_us gru_profile dropdown">
+                                <a href="#" class="btn_user_profile dropdown-toggle" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                                                            <img src="http://167.99.143.115/website_v3/img/profilePicture.svg" alt="بروفايل">
+                                        <div class="gru_profile_sec">
+                                            <h6>kareem mushtaha </h6>
+                                            <span>kareem_mushtaha@gmail.com</span>
+                                        </div>
+                                                                    </a>
+                                <ul class="dropdown-menu dropdown_profile">
+
+
+                                                                            <li><a href="orders.html"><i class="fas fa-clipboard-list"></i>قائمة الطلبات</a>
+                                        </li>
+                                        <li><a href="http://167.99.143.115/ar/website/logout"><i
+                                                    class="fas fa-sign-out"></i>تسجيل الخروج </a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="msg_header2" style="background-color:#a347ff ; ">
+                            <div class="container">
+                    <a href="https://web.whatsapp.com/">
+                        <p class="msg_top"
+                           style="color: #ffffff;">✌ 11122111 ✌</p>
+                    </a>
+                </div>
+                    </div>
+
+    
+
+</header>
+
+<div class="block_search_mobile">
+    <div class="container">
+        <div class="search_head">
+            <form class="form_search_head" action="/shop/">
+                <input type="text" class="form-control" id="search_product_input" name="search"
+                       placeholder="ابحث عن منتج">
+                <span class="search_icon"><i class="far fa-search"></i></span>
+                <button type="submit" class="btn btn_search">بحث الآن</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+    <div class="block_breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">إنهاء الطلب</li>
+            </ol>
+        </div>
+    </div>
+    <div class="content_innerPage" id="cart-details-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-lg-12">
+                    <h2 class="title_page">طلبك</h2>
+                    <div class="tb_order_checkout">
+                        <div class="block_table_details_order">
+                            <div class="table-responsive">
+                                <table class="table table_order">
+                                    <thead>
+                                    <tr>
+                                        <th>تفاصيل المنتج</th>
+                                        <th>السعر</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr v-for="product in cart_data.products">
+                                        <td>
+                                            <div class="order_itm_tb clearfix">
+                                                <a :href="'http://167.99.143.115/ar/products/'+product.id"
+                                                   class="thumb_order_tb">
+                                                    <img :src="product.image" alt="">
+                                                </a>
+                                                <div class="txt_order_tb">
+                                                    <h2>
+                                                        <a :href="'http://167.99.143.115/ar/products/'+product.id">{{
+                                                            product.name }}</a></h2>
+                                                    <p>الكمية: {{ product.quantity }}</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            {{ product.price_after }}
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="block_table_details_order tb_total_checkout">
+                            <div class="table-responsive">
+                                <table class="table table_order">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            السعر
+                                        </td>
+                                        <td>
+                                            {{ cart_data.price }}
+                                        </td>
+                                    </tr>
+
+                                    <tr
+                                            v-for="coupon in cart_data.coupons_automatic">
+                                        <td>كوبون الخصم
+                                            ( <span v-text="coupon.coupon"> </span> )
+                                            <span v-show="coupon.type == 'free_shipping'"
+                                                  v-text="'['+coupon.type_text+']'"></span>
+
+                                        </td>
+                                        <td>{{ "-"+coupon.price }} 
+                                        </td>
+                                    </tr>
+
+                                    <tr v-for="admin_discount in cart_data.admin_discounts"
+                                        v-show="admin_discount.price > 0">
+                                        <td>
+                                            {{ admin_discount.name }}
+                                        </td>
+                                        <td class="mr-auto">
+                                            {{ "-"+admin_discount.price }}
+                                        </td>
+
+                                    </tr>
+                                    <tr
+                                            v-show="cart_data.coupon && cart_data.coupon.id != -1">
+                                        <td>كوبون الخصم
+                                            (<span v-text="cart_data.coupon && cart_data.coupon.id != -1 ? cart_data.coupon.coupon: '' "> </span>)
+                                            <span v-show="cart_data.coupon && cart_data.coupon.id "></span>
+                                        </td>
+                                        <td>{{ "-"+cart_data.coupon_price }}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>اجمالي المبلغ بعد الخصم</td>
+                                        <td>
+                                            {{ cart_data.price_after_discount_coupon }}
+                                        </td>
+                                    </tr>
+
+
+
+
+                                    <tr v-if="cart_data.shipping > 0">
+                                        <td>
+                                            تكاليف الشحن
+                                        </td>
+                                        <td>
+                                            {{ cart_data.shipping }}
+                                        </td>
+                                    </tr>
+
+
+                                    <tr v-show="cart_data.cash_value != 0">
+                                        <td>رسوم الدفع عند الاستلام (ثابتة)</td>
+                                        <td>{{ cart_data.cash_value }}
+                                        </td>
+                                    </tr>
+
+                                    <tr v-if="cart_data.tax > 0">
+                                        <td>
+                                            الضريبة المضافه
+                                        </td>
+                                        <td>
+                                            {{ cart_data.tax }}
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="order_total tb_total_last d-flex align-items-center">
+                            <h3>الإجمالي</h3>
+                            <p class="mr-auto">{{cart_data.total_price }} {{ cart_data.currency }} </p>
+                        </div>
+                        <div class="msg_thanks"><p><span class="msg_icon"><i
+                                            class="fas fa-heart"></i></span>شكراً لتسوقك من الكويتية ستور، نتمنى لك تجربة رائعة ..</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1">
+                    <div class="alert alert-danger dan_alert hidden" role="alert">
+
+                    </div>
+                    <div class="alert alert-success suc_alert hidden" role="alert">
+
+                    </div>
+
+                    
+
+                    <h2 class="title_page">طريقة الاستلام المفضلة لك</h2>
+                    <div class="row">
+                        <div v-for="shipping_company in shipping_companies" class="col-md-6">
+                            <div class="form-group">
+                                <div class="box_check_itm">
+                                    <input type="radio" :class="'shipping_company_'+shipping_company.id"
+                                           :value="shipping_company.id" class="radio_st"
+                                           @change="update_billing(true , shipping_company.accept_user_shipping_address)"
+                                           name="shipping_company">
+                                    <div class="box_check_itm_cn clearfix"
+                                         :class="'check_shipping_company_'+shipping_company.id">
+                                        <div class="icon_check">
+                                            <img :src="shipping_company.image_web" alt="">
+                                        </div>
+                                        <div class="txxt_check">
+                                            <h3>{{ shipping_company.name }}</h3>
+                                            <p v-if="shipping_company.id == 1">خدمة مجانية</p>
+                                            <p v-if="shipping_company.id != 1"> يوجد رسوم إضافية</p>
+                                        </div>
+                                    </div>
+                                    <p class="show_div1">مدة الشحن : شهرين إلى ثلاث أشهر من تاريخ الطلب</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="order-dis hidden">
+                        <div class="row">
+
+                                                            <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="box_check_itm">
+                                            <input type="radio" class="radio_st" name="addresses" value="11"
+                                                   @change="update_billing(true )">
+                                            <div class="box_check_itm_cn clearfix">
+                                                <div class="txxt_check">
+                                                    <ul>
+                                                        <li>
+                                                            <span>الاسم :</span> anas mahjub
+                                                        </li>
+                                                        <li>
+                                                            <span>رقم الجوال : </span> 59425555
+                                                        </li>
+
+                                                        <li>
+                                                            <span>المدينة :</span>الأحمدي </li>
+                                                            <span>القطعة :</span> 
+
+                                                        <li>
+                                                            <span>الشارع : </span>
+                                                            <span>الجادة : </span> 
+                                                        </li>
+                                                        <li>
+                                                            <span>رقم المبني :</span> 
+                                                            <span>رقم الطابق :</span> 
+                                                        </li>
+                                                        <li>
+                                                            <span> رقم الشقة :</span> 
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="actionRow">
+                                                        <span class="dots">●</span>
+                                                        <a class="editAction" href="http://167.99.143.115/ar/my-account/edit-address/11">تعديل</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                                            <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="box_check_itm">
+                                            <input type="radio" class="radio_st" name="addresses" value="43916"
+                                                   @change="update_billing(true )">
+                                            <div class="box_check_itm_cn clearfix">
+                                                <div class="txxt_check">
+                                                    <ul>
+                                                        <li>
+                                                            <span>الاسم :</span> Dolore occaecat sed Quis et est ut quis
+                                                        </li>
+                                                        <li>
+                                                            <span>رقم الجوال : </span> 83456787
+                                                        </li>
+
+                                                        <li>
+                                                            <span>المدينة :</span>أبو الحصانية </li>
+                                                            <span>القطعة :</span> Iste facilis aliquid
+
+                                                        <li>
+                                                            <span>الشارع : </span>Voluptates quis odit
+                                                            <span>الجادة : </span> In aute nihil adipis
+                                                        </li>
+                                                        <li>
+                                                            <span>رقم المبني :</span> Fuga Libero porro p
+                                                            <span>رقم الطابق :</span> Incidunt quis dolor
+                                                        </li>
+                                                        <li>
+                                                            <span> رقم الشقة :</span> Omnis consequuntur e
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="actionRow">
+                                                        <span class="dots">●</span>
+                                                        <a class="editAction" href="http://167.99.143.115/ar/my-account/edit-address/43916">تعديل</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                                    </div>
+
+                        
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                        
+                        
+                            
+                                
+                 
+                                    
+                                        
+                                               
+                                               
+
+                                        
+
+                                    
+                                    
+                                    
+                                    
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                        
+                        <div class="row hidden">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control js-select select_country">
+                                        <option>الدولة</option>
+
+                                                                                    <option value="KW">الكويت</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control js-select select_city" v-model="user_shipping.city">
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                            
+                                
+                                    
+                                           
+                                
+                            
+                        
+                    </div>
+                    <div class="form_st2">
+
+
+                        <h2 class="title_page">طريقة الدفع</h2>
+                        <div class="row">
+
+                            <div v-for="payment_method in payment_method_for_city" class="col-md-6">
+                                <div class="form-group">
+                                    <div class="box_check_itm">
+                                        <input type="radio" :class="'payment_method_'+payment_method.id"
+                                               class="radio_st" v-on:change="change_payment_method"
+                                               :value="payment_method.id" name="payment_method">
+                                        <div class="box_check_itm_cn clearfix">
+                                            <div class="icon_check">
+                                                <img :src="payment_method.image" alt="">
+                                            </div>
+                                            <div class="txxt_check">
+                                                <h3>{{ payment_method.name }}</h3>
+                                                <p>{{ payment_method.note }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-form ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>الاسم على البطاقة</label>
+                                        <input type="text" class="form-control" v-model="card_name"
+                                               placeholder="الاسم على البطاقة">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>رقم البطاقة</label>
+                                        <input type="text" class="form-control" id="card_number" v-model="card_number"
+                                               placeholder="رقم البطاقة (أقصى قيمة 16 رقم)">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>تاريخ الانتهاء</label>
+                                        <select class="form-control js-select " v-model="card_month"
+                                                data-placeholder="الشهر">
+                                            <option></option>
+
+                                            <option class="extraneous" value="01">01</option>
+                                            <option class="extraneous" value="02">02</option>
+                                            <option class="extraneous" value="03">03</option>
+                                            <option class="extraneous" value="04">04</option>
+                                            <option class="extraneous" value="05">05</option>
+                                            <option class="extraneous" value="06">06</option>
+                                            <option class="extraneous" value="07">07</option>
+                                            <option class="extraneous" value="08">08</option>
+                                            <option class="extraneous" value="09">09</option>
+                                            <option class="extraneous" value="10">10</option>
+                                            <option class="extraneous" value="11">11</option>
+                                            <option class="extraneous" value="12">12</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <select class="form-control js-select " v-model="card_year"
+                                                data-placeholder="السنة">
+                                            <option></option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                            <option value="24">2024</option>
+                                            <option value="25">2025</option>
+                                            <option value="26">2026</option>
+                                            <option value="27">2027</option>
+                                            <option value="28">2028</option>
+                                            <option value="29">2029</option>
+                                            <option value="30">2030</option>
+                                            <option value="31">2031</option>
+                                            <option value="32">2032</option>
+                                            <option value="33">2033</option>
+                                            <option value="34">2034</option>
+                                            <option value="35">2035</option>
+                                            <option value="36">2036</option>
+                                            <option value="37">2037</option>
+                                            <option value="38">2038</option>
+                                            <option value="39">2039</option>
+                                            <option value="40">2040</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>رمز التحقق من البطاقة (CVC)</label>
+                                        <input type="text" id="card_cvv" class="form-control" v-model="card_cvv"
+                                               placeholder="أقصى قيمة 3 أرقام">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <button type="submit" @click="add_order" class="btn btn-block add_order btn_prim"> إدفع
+                                    الآن
+
+
+                                    <div class="spinner-grow text-light hidden" id="add_order_loader" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal_st" id="order_dt" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button class="close_modal" data-dismiss="modal" aria-label="Close"><i class="far fa-times"></i>
+                    </button>
+                    <div class="modal_head">
+                        <h2 class="modal_title"><i class="fas fa-mobile-alt"></i>تأكيد رقم الجوال</h2>
+                    </div>
+                    <div class="modal_body">
+                        <p class="note_modal model_api_data">تم ارسال كود تحقق إلى رقم الجوال </p>
+                        <div class="code_number"></div>
+
+                        <div class="form-group">
+                            <label class="fr_label">كود التحقق</label>
+                            <input type="text" id="confirm_code" class="form-control" placeholder="كود التحقق">
+                            <small id="error_code" class="hidden" style="color: red;"></small>
+
+                        </div>
+                        <button type="button" class="btn btn_prim btn_dt" @click="confirm_phone_code">تحقق الآن</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="subscribe" id="sec_block_subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="join">
+                    <i class="far fa-envelope"></i>
+                    <h3>اشترك بالقائمة البريدية</h3>
+                </div>
+                <div class="sub_p">
+                    <p>اشترك في النشرة البريدية لدينا للحصول على آخر تحديثات المنتجات</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mb-3">
+                    <form class="form_subscribe" action="#">
+                        <input type="email" v-model="email" class="form-control" placeholder="بريدك الالكتروني ....">
+                        <button type="button" @click="store_mailing_list" class="btn btn_subscribe" id="button-addon1">
+                            اشتراك
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="alert alert-danger dan_alert_mailing_list hidden" role="alert">
+            </div>
+            <div class="alert alert-success suc_alert_mailing_list hidden" role="alert ">
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="logo_sec">
+                    <div class="ft_logo">
+                        <a href="index.html"><img src="http://167.99.143.115/website_v3/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="logo_p">
+                        <p>نحن دائماً جاهزون لمساعدتك</p>
+                        <p>تواصل معنا من خلال أي من قنوات الدعم التالية :</p>
+
+
+
+                    </div>
+                    <div class="logo_social">
+                        <ul class="social_media clearfix">
+                            <li><a href="https://www.instagram.com/q8chine" target="_blank"><img src="http://167.99.143.115/website_v3/img/ins.svg" alt="..."></a></li>
+                            <li><a href="#" target="_blank"><img src="http://167.99.143.115/website_v3/img/lin.svg" alt="..."></a></li>
+                            <li><a href="https://twitter.com/live_chinaq8" target="_blank"><img src="http://167.99.143.115/website_v3/img/tw.svg" alt="..."></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCY4uImpSU4emUfpVIavPfTg/videos" target="_blank"><img src="http://167.99.143.115/website_v3/img/yo.svg" alt="..."></a></li>
+                            <li><a href="https://www.facebook.com/q8china/" target="_blank"><img src="http://167.99.143.115/website_v3/img/f.svg" alt="..."></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="f_box">
+                    <h2 class="ft_title">إيدي ... أيدي سعودية</h2>
+                    <ul class="ft_menu clearfix">
+                        <li><a href="http://167.99.143.115/ar/about-us"> عن إيدي ستور</a></li>
+                        <li><a href="http://167.99.143.115/ar/terms">الشروط والاحكام</a></li>
+                        <li><a href="http://167.99.143.115/ar/privacy-policy">سياسة الخصوصية</a></li>
+                        <li><a href="http://167.99.143.115/ar/return-policy"> سياسة والاستبدال </a></li>
+                        <li><a href="http://167.99.143.115/ar/shipping-and-delivery">الشحن والتوصيل</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="f_box contact">
+                    <h2 class="ft_title">ابق على تواصل معنا</h2>
+                    <ul class="ft_menu clearfix">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> ومن هنا وجب على المصمم أن يضع نصوصا
+                                مؤقتة على التصميم ليظهر للعميل</a></li>
+                        <li><a href="tel:0096568886446" target="_blank"><i class="fas fa-phone"></i> 0096568886446</a></li>
+                        <li><a href="https://wa.me/0096568886446" target="_blank"><i class="fas fa-phone"></i> الواتساب</a></li>
+
+
+
+                        <li><a href="mailto:info@q8store.co" target="_blank"><i class="far fa-envelope"></i> info@q8store.co</a></li>
+                        <li><a onclick="open_chat()" target="_blank"><i class="far fa-envelope"></i> المحادثة الحية</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container d-flex align-items-center">
+            <div class="copy_right">
+                <p>جميع الحقوق محفوظة لمتجر إيدي © 2020</p>
+            </div>
+            <div class="copy_right mr-auto"><p>تم تطويره بواسطة <span>فايبرز للحلول التقنية</span></p></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="http://167.99.143.115/website_v3/js/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="http://167.99.143.115/website_v3/js/wow.min.js"></script>
+<script src='/website_v2/js/jquery.zoom.js'></script>
+
+<script src="http://167.99.143.115/website_v3/js/script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+<script src="http://167.99.143.115/js/app.js"></script>
+<script src="http://167.99.143.115/admin_assets/assets/general/js/vee_vue.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/admin_assets/assets/general/js/general.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/website_v3/general/js/general.js" type="text/javascript"></script>
+<script src="http://167.99.143.115/website_v3/general/js/notify.min.js" type="text/javascript"></script>
+
+
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut();
+    });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        var coupon_code = "";
+        var shipping_info = {"id":43916,"user_id":10,"first_name":"Dolore occaecat sed","last_name":"Quis et est ut quis","phone":"83456787","country":"120","city":6523,"city2":null,"state":"Iste facilis aliquid","avenue":"In aute nihil adipis","building_number":"Fuga Libero porro p","floor_number":"Incidunt quis dolor","apartment_number":"Omnis consequuntur e","street":"Voluptates quis odit","address":null,"email":"bylafipo@mailinator.com","code":827,"is_verified":0,"is_default":null,"is_gift":0,"gift_target_phone":null,"gift_target_email":null,"gift_first_name":null,"gift_last_name":null,"gift_text":null,"billing_shipping_type":"3","billing_national_address":null,"billing_building_number":null,"billing_postalcode_number":null,"billing_unit_number":null,"billing_extra_number":null,"platform":null,"delivared_name":null,"delivared_lat":null,"delivared_lng":null,"created_at":"2021-04-26 11:28:59","updated_at":"2021-04-26 11:28:59","deleted_at":null,"phone_code":"965","shipping_city":{"id":6523,"name_en":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629","name_ar":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629","country_id":120,"status":1,"created_at":"2020-12-10 08:46:05","updated_at":"2021-03-07 15:18:59","deleted_at":null,"name":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629"}};
+        var all_shipping_info = [{"id":11,"user_id":10,"first_name":"anas","last_name":"mahjub","phone":"59425555","country":"120","city":6527,"city2":null,"state":null,"avenue":null,"building_number":null,"floor_number":null,"apartment_number":null,"street":null,"address":null,"email":"anas.mahjub@gmail.com","code":5038,"is_verified":1,"is_default":1,"is_gift":0,"gift_target_phone":null,"gift_target_email":null,"gift_first_name":null,"gift_last_name":null,"gift_text":null,"billing_shipping_type":"1","billing_national_address":null,"billing_building_number":null,"billing_postalcode_number":null,"billing_unit_number":null,"billing_extra_number":null,"platform":"ios","delivared_name":null,"delivared_lat":null,"delivared_lng":null,"created_at":"2021-04-05 15:35:20","updated_at":"2021-08-14 21:27:08","deleted_at":null,"phone_code":"965","shipping_city":{"id":6527,"name_en":"\u0627\u0644\u0623\u062d\u0645\u062f\u064a","name_ar":"\u0627\u0644\u0623\u062d\u0645\u062f\u064a","country_id":120,"status":1,"created_at":"2020-12-10 08:46:52","updated_at":"2021-03-07 15:20:15","deleted_at":null,"name":"\u0627\u0644\u0623\u062d\u0645\u062f\u064a"}},{"id":43916,"user_id":10,"first_name":"Dolore occaecat sed","last_name":"Quis et est ut quis","phone":"83456787","country":"120","city":6523,"city2":null,"state":"Iste facilis aliquid","avenue":"In aute nihil adipis","building_number":"Fuga Libero porro p","floor_number":"Incidunt quis dolor","apartment_number":"Omnis consequuntur e","street":"Voluptates quis odit","address":null,"email":"bylafipo@mailinator.com","code":827,"is_verified":0,"is_default":null,"is_gift":0,"gift_target_phone":null,"gift_target_email":null,"gift_first_name":null,"gift_last_name":null,"gift_text":null,"billing_shipping_type":"3","billing_national_address":null,"billing_building_number":null,"billing_postalcode_number":null,"billing_unit_number":null,"billing_extra_number":null,"platform":null,"delivared_name":null,"delivared_lat":null,"delivared_lng":null,"created_at":"2021-04-26 11:28:59","updated_at":"2021-04-26 11:28:59","deleted_at":null,"phone_code":"965","shipping_city":{"id":6523,"name_en":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629","name_ar":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629","country_id":120,"status":1,"created_at":"2020-12-10 08:46:05","updated_at":"2021-03-07 15:18:59","deleted_at":null,"name":"\u0623\u0628\u0648 \u0627\u0644\u062d\u0635\u0627\u0646\u064a\u0629"}}]
+        var country_code = "KW";
+        var countries = [{"id":120,"name_ar":"\u0627\u0644\u0643\u0648\u064a\u062a","name_en":"Kuwait","flag":"http:\/\/167.99.143.115\/uploads\/countries\/hF4HYuzcp2Voy00i1a6J1616207599uV38onfG6pzJzEX6Grb4.png","iso3":"KWT","iso2":"KW","phone_code":"965","currency_id":60,"capital_en":null,"capital_ar":null,"timezone":"Asia\/Kuwait","lat":29.3375,"lng":47.6581,"status":1,"created_at":"2020-02-16 16:07:01","updated_at":"2021-03-20 06:33:19","deleted_at":null,"name":"\u0627\u0644\u0643\u0648\u064a\u062a","capital":null}];
+        var confirm_phone_data =  {"phone_code":"","phone":"9425555","steps":1};
+
+        $('#phone_number').change(function () {
+            $('#phone_number').val(convertNumber($('#phone_number').val()));
+        });
+
+        $('#confirm_code').change(function () {
+
+            $('#confirm_code').val(convertNumber($('#confirm_code').val()));
+        });
+
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+        </script>
+
+
+
+    <script src="http://167.99.143.115/website/general/js/checkout/checkout.js" type="text/javascript"></script>
+    <script src="http://167.99.143.115/website/general/js/map.js" type="text/javascript"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script src="http://167.99.143.115/website/general/js/map.js" type="text/javascript"></script>
+
+
+
+<script>
+    $(document).on('click', '#kareem', function (e) {
+        var formData = new FormData($('#form_search_category')[0]); //get all data in form
+        $.ajax({
+            type: 'get',
+            enctype: 'multipart/form-data',
+            url: "http://167.99.143.115/ar/category_search",
+            data: formData, // send this data to controller
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function (data) {
+                if (data.status === true) {
+                    // console.log(data);
+                    // showAllPosts();
+                }
+            }, error: function (reject) {
+
+            }
+        });
+    });
+
+</script>
+
+
+<script>
+    function open_chat() {
+        LiveChatWidget.call('maximize')
+    }
+
+    window.__lc = window.__lc || {};
+    window.__lc.license = 12473325;
+    ;(function (n, t, c) {
+        function i(n) {
+            return e._h ? e._h.apply(null, n) : e._q.push(n)
+        }
+
+        var e = {
+            _q: [], _h: null, _v: "2.0", on: function () {
+                i(["on", c.call(arguments)])
+            }, once: function () {
+                i(["once", c.call(arguments)])
+            }, off: function () {
+                i(["off", c.call(arguments)])
+            }, get: function () {
+                if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                return i(["get", c.call(arguments)])
+            }, call: function () {
+                i(["call", c.call(arguments)])
+            }, init: function () {
+                var n = t.createElement("script");
+                n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+            }
+        };
+        !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+    }(window, document, [].slice))
+</script>
+
+</body>
+</html>

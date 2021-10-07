@@ -1,0 +1,1 @@
+<a href="{{url('')}}/admin/order-product-report?product_id={{$id}}">{{$name}}</a>

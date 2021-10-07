@@ -1,0 +1,62 @@
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th {
+    text-align: center !important;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td {
+    text-align: center !important;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tfoot tr td {
+    padding: 1rem 0 1rem 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items {
+    padding: 2rem 0 3rem 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer {
+    margin-top: 1rem;
+}
+
+.h-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th {
+    color: black;
+    font-weight: 600;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td {
+    color: black;
+    font-weight: 500;
+}
+
+.bootstrap-select.form-control:not([class*="col-"]) {
+    margin-top: 0px;
+}
+#m_select_remote_products_div .select2-container {
+    width: 100% !important;
+    /*margin-right: -25%!important;*/
+}
+.select2-search__field {
+    direction: rtl!important;
+    margin-left: -25px!important;
+}
+.select2-selection__clear {
+    float: left!important;
+}
+
+.blockOverlay {
+    opacity: 0.01!important;
+}
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container.m-invoice__container--centered {
+    width: 88%!important;
+}
+
+

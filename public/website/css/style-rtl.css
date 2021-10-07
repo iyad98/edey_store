@@ -1,0 +1,15 @@
+@font-face {
+  font-family: TheSansPlain;
+  src: url(../fonts/The-Sans-Plain.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  font-family: TheSansPlain;
+}
+/*# sourceMappingURL=style-rtl.css.map */
